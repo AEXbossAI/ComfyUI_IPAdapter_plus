@@ -34,7 +34,7 @@ from .utils import (
 
 # set the models directory
 if "ipadapter" not in folder_paths.folder_names_and_paths:
-    current_paths = [os.path.join(folder_paths.models_dir, "ipadapter")]
+    current_paths = [os.path.join(folder_paths.models_dir, "checkpoints")]
 else:
     current_paths, _ = folder_paths.folder_names_and_paths["ipadapter"]
 folder_paths.folder_names_and_paths["ipadapter"] = (current_paths, folder_paths.supported_pt_extensions)
